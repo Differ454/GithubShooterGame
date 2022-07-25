@@ -11,7 +11,7 @@ window.addEventListener("keydown", (e) => {
     jet.style.left = left + 10 + "px";
   }
 
-  if (e.key == "ArrowUp" || e.keyCode == 32) {
+  if (e.key == "ArrowUp" || e.key == "Enter") {
     //32 is for space key
     var bullet = document.createElement("div");
     bullet.classList.add("bullets");
