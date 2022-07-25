@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Github Shooter 2022</title>
-  </head>
-  <style>
-    body {
+body {
       width: 100%;
       overflow: hidden;
       background: url("space.jpg");
@@ -71,15 +63,4 @@
       font-size: 10em;
       color: rgb(235, 146, 146);
     }
-  </style>
-  <script src="app.js" defer></script>
-  <body>
-    <div id="board">
-      <div class="rocks"></div>
-      <div class="rocks1">Github shooter By Diego Ruiz</div>
-      <div id="jet"></div>
-      
-    </div>
-     <div id="points">0</div> 
-  </body>
-</html>
+  
