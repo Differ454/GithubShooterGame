@@ -37,8 +37,8 @@ window.addEventListener("keydown", (e) => {
           ) {
             rock.parentElement.removeChild(rock); //Just removing that particular rock;
             //Scoreboard
-             document.getElementById("points").innerHTML =
-               parseInt(document.getElementById("points").innerHTML) + 1;
+            document.getElementById("points").innerHTML =
+              parseInt(document.getElementById("points").innerHTML) + 1;
           }
         }
       }
@@ -80,12 +80,12 @@ var moverocks = setInterval(() => {
       var rocktop = parseInt(
         window.getComputedStyle(rock).getPropertyValue("top")
       );
-      //475 => boardheight - rockheight + 25 ---> //(rocktop >= 475) 
-      // if (rocktop >= 475) {
-      //   alert("Game Over");
-      //   clearInterval(moverocks);
-      //   window.location.reload();
-      // }
+      //475 => boardheight - rockheight + 25 ---> //(rocktop >= 475)
+      if (rocktop >= 475) {
+        alert("Game Over");
+        clearInterval(moverocks);
+        window.location.reload();
+      }
 
       rock.style.top = rocktop + 25 + "px";
     }
